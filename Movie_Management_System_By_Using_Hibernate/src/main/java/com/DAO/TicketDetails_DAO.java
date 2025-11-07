@@ -21,7 +21,7 @@ public class TicketDetails_DAO {
 	    entityTransaction.begin();
 	    entityManager.persist(ticket_ Details);
 	    entityTransaction.commit();
-	    System.out.println("-------------Ticket Has Booked Succuesfully-----------------");
+	    System.out.println("---------Ticket Has Booked Succuesfully-----------");
 	}
 	public List<TicketDetails> selectTicketDetailsByUserId(int User_Id)
 	{
@@ -88,7 +88,7 @@ public class TicketDetails_DAO {
 		    {
 		    	System.out.println(".....Ticket Has been Cancelled...");
 		    }else {
-		    	System.out.println("************* Server Error **********************");
+		    	System.out.println("*********** Server Error ****************");
 		    }
 		    entityTransaction.commit();
 		    entityManager.close();
@@ -96,3 +96,4 @@ public class TicketDetails_DAO {
 
 
 }
+
